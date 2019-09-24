@@ -40,4 +40,4 @@ train_datagen = datagen.flow_from_directory('./img_data',target_size=(150,150),b
 
 model.fit_generator(train_datagen,steps_per_epoch=2000,epochs=50)
 
-model.sample_weights('vehicle_weight.h5')
+model.save_weights('vehicle_weight.h5')
